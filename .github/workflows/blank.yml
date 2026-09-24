@@ -1,0 +1,11 @@
+name: Mera Pehla CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Sakshi ki file padho
+        run: cat notes.text
+      - name: Docker Tiffin banao
+        run: docker build -t mera-tiffin.
